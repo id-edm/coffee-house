@@ -33,8 +33,10 @@ li {
   height: 100%;
   margin: 0 auto;
   background: #e1d4c9;
+  overflow: hidden;
 }
 
+/*style header start*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -53,12 +55,46 @@ li {
 
 .nav__menu_item {
     margin: 0 20px;
+    cursor: pointer;
 }
 
 .menu {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
 }
+
+.btn__menu_icon {
+  margin-left: 8px;
+}
+
+.underline:after {
+  content: '';
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  background: #403F3D;
+  height: 2px; 
+  width: 0%; 
+  z-index: -1; 
+  transition: width 0.8s, opacity 0.8s;
+  border-radius: 100px;
+  opacity: 0; 
+}
+.underline:hover {
+  text-shadow: 0 0 16px rgba(244,162,97,0.64);
+}
+
+.underline:hover:after {
+  width: 100%;
+  opacity: 1;
+  box-shadow: 0 0 16px rgba(42,157,143,0.88);
+}
+
+/*style header end*/

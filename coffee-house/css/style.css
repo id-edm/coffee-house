@@ -46,7 +46,7 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .nav__menu_list {
@@ -55,13 +55,12 @@ li {
 }
 
 .nav__menu_item {
-    margin: 0 20px;
-    cursor: pointer;
+  margin: 0 20px;
+  cursor: pointer;
 }
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
   border: none;
   font: inherit;
@@ -75,37 +74,104 @@ li {
 }
 
 .underline:after {
-  content: '';
+  content: "";
   left: 0;
   right: 0;
   margin: 0 auto;
   display: block;
-  background: #403F3D;
-  height: 2px; 
-  width: 0%; 
-  z-index: -1; 
+  background: #403f3d;
+  height: 2px;
+  width: 0%;
+  z-index: -1;
   transition: width 0.8s, opacity 0.8s;
   border-radius: 100px;
-  opacity: 0; 
+  opacity: 0;
 }
 .underline:hover {
-  text-shadow: 0 0 16px rgba(244,162,97,0.64);
+  text-shadow: 0 0 16px rgba(244, 162, 97, 0.64);
 }
 
 .underline:hover:after {
   width: 100%;
   opacity: 1;
-  box-shadow: 0 0 16px rgba(42,157,143,0.88);
+  box-shadow: 0 0 16px rgba(42, 157, 143, 0.88);
 }
 /*style header end*/
 
 /*style enjoy start*/
 .enjoy {
   display: flex;
-  height: 600px;
+  padding: 100px;
   background: url(../assets/img/img-hero.jpg) no-repeat center;
   border-radius: 40px;
   margin: 0 20px;
   background-size: cover;
 }
-/*style enjoy start*/
+
+.title {
+  color: #e1d4c9;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%;
+  margin: 0;
+}
+
+.title__wrapper {
+  display: flex;
+  width: 530px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.enjoi__italic {
+  color: #b0907a;
+  font-style: italic;
+}
+
+.subtitle {
+  color: #e1d4c9;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.enjoy__button {
+  position: relative;
+  padding: 20px 78px;
+  border-radius: 100px;
+  background: #e1d4c9;
+}
+
+.enjoy__button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.enjoy__button-menu {
+  transition: all ease-in 0.3s;
+}
+
+.enjoy__button-icon {
+  display: flex;
+  align-items: center;
+  transition: all ease-in 0.3s;
+  opacity: 0;
+}
+
+.enjoy__button:hover .enjoy__button-menu {
+  transform: translate(-8px);
+}
+
+.enjoy__button:hover .enjoy__button-icon {
+  opacity: 1;
+}

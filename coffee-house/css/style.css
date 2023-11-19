@@ -210,18 +210,18 @@ li {
 }
 
 .slider__btn:hover {
-  background: #665F55;
+  background: #665f55;
   cursor: pointer;
 }
 
 .btn-icon {
-  stroke: #403F3D;
+  stroke: #403f3d;
   transition: ease-in 0.25s;
 }
 
 .slider__btn:hover .btn-icon {
   transform: scale(1.15);
-  stroke:#e1d4c9;
+  stroke: #e1d4c9;
 }
 
 .slider__content {
@@ -231,4 +231,38 @@ li {
   max-width: 1162px;
   flex-direction: column;
   align-items: center;
+}
+
+.slider__content-description {
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contemt__description-title {
+  align-self: stretch;
+  color: #403f3d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.content__description-subtitle {
+  text-align: center;
+  
+}
+
+.content__description-price {
+  color: #403F3D;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
 }

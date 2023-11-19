@@ -39,19 +39,22 @@ li {
 /*style header start*/
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
-  margin: 20px;
+  margin: 20px 40px;
 }
 
 .nav__menu_list {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .nav__menu_item {
@@ -93,10 +96,15 @@ li {
 /*style enjoy start*/
 .enjoy {
   display: flex;
+  max-width: 1360px;
   padding: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
   background: url(../assets/img/img-hero.jpg) no-repeat center;
   border-radius: 40px;
-  margin: 0 20px;
+  margin: 0 40px;
   background-size: cover;
 }
 
@@ -255,14 +263,32 @@ li {
 
 .content__description-subtitle {
   text-align: center;
-  
 }
 
 .content__description-price {
-  color: #403F3D;
+  color: #403f3d;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.slider__controls-btn {
+  width: 40px;
+  height: 4px;
+  background: #665f55;
+  border-radius: 4px;
+  border: none;
+}
+
+.slider__controls-inactive {
+  background: #c1b6ad;
 }

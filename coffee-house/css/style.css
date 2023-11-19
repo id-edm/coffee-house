@@ -1,6 +1,6 @@
 @font-face {
   font-display: swap;
-  font-family: "Inter";
+  font-family: Inter;
   font-style: Regular;
   font-weight: 400;
   src: url("../assets/fonts/Inter-Regular.ttf");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-display: swap;
-  font-family: "Inter";
+  font-family: Inter;
   font-style: SemiBold;
   font-weight: 600;
   src: url("../assets/fonts/Inter-SemiBold.ttf");
@@ -73,28 +73,20 @@ li {
   margin-left: 8px;
 }
 
-.underline:after {
+.underline::after {
   content: "";
-  left: 0;
-  right: 0;
   margin: 0 auto;
   display: block;
   background: #403f3d;
   height: 2px;
-  width: 0%;
-  z-index: -1;
-  transition: width 0.8s, opacity 0.8s;
+  transition: 0.8s, opacity 0.8s;
   border-radius: 100px;
   opacity: 0;
 }
-.underline:hover {
-  text-shadow: 0 0 16px rgba(244, 162, 97, 0.64);
-}
 
-.underline:hover:after {
+.underline:hover::after {
   width: 100%;
   opacity: 1;
-  box-shadow: 0 0 16px rgba(42, 157, 143, 0.88);
 }
 /*style header end*/
 
@@ -126,7 +118,7 @@ li {
   gap: 40px;
 }
 
-.enjoi__italic {
+.text__italic {
   color: #b0907a;
   font-style: italic;
 }
@@ -143,12 +135,13 @@ li {
 
 .enjoy__button {
   position: relative;
-  padding: 20px 78px;
+  padding: 32px 90px;
   border-radius: 100px;
   background: #e1d4c9;
 }
 
 .enjoy__button {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -158,20 +151,84 @@ li {
 }
 
 .enjoy__button-menu {
-  transition: all ease-in 0.3s;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 0);
+  transition: all ease-in 0.5s;
 }
 
 .enjoy__button-icon {
-  display: flex;
-  align-items: center;
-  transition: all ease-in 0.3s;
+  position: absolute;
+  left: 60%;
+  transform: translate(0, 10%);
+  transition: all ease-in 0.5s;
   opacity: 0;
 }
 
 .enjoy__button:hover .enjoy__button-menu {
-  transform: translate(-8px);
+  transform: translate(8px);
 }
 
 .enjoy__button:hover .enjoy__button-icon {
   opacity: 1;
+}
+/*style enjoy end*/
+
+/*style favourites coffee start*/
+.favourites__coffee-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.favourites__coffee-title {
+  margin-top: 100px;
+  color: #403f3d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__btn {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #e1d4c9;
+  border: 1px solid #665f55;
+  transition: ease-in 0.25s;
+}
+
+.slider__btn:hover {
+  background: #665F55;
+  cursor: pointer;
+}
+
+.btn-icon {
+  stroke: #403F3D;
+  transition: ease-in 0.25s;
+}
+
+.slider__btn:hover .btn-icon {
+  transform: scale(1.15);
+  stroke:#e1d4c9;
+}
+
+.slider__content {
+  display: flex;
+  width: 1152px;
+  min-width: 480px;
+  max-width: 1162px;
+  flex-direction: column;
+  align-items: center;
 }

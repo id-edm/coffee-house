@@ -41,7 +41,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -106,7 +105,6 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  align-self: stretch;
   background: url(../assets/img/img-hero.jpg) no-repeat center;
   border-radius: 40px;
   margin: 0 40px;
@@ -194,10 +192,10 @@ li {
   flex-wrap: wrap;
   justify-content: center;
 }
-.favourites__coffee-title {
+.title__h2 {
   margin-top: 100px;
   color: #403f3d;
-  text-align: center;
+  text-align: start;
   font-family: Inter;
   font-size: 60px;
   margin-bottom: 0;
@@ -304,3 +302,58 @@ li {
 .slider__controls-inactive {
   background: #c1b6ad;
 }
+/*style favourites coffee start*/
+
+/*style about start*/
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about__title {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
+  margin-bottom: 40px;
+}
+
+.about__wrappper-column {
+  max-width: 1360px;
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 40px;
+}
+
+.column__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+.column__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+

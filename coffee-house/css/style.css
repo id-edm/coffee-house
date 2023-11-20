@@ -305,7 +305,6 @@ li {
 /*style favourites coffee start*/
 
 /*style about start*/
-
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -397,3 +396,7 @@ li {
 .column__img-small img:hover {
   transform: scale(1);
 }
+/*style about end*/
+
+/*style mobile app start*/
+

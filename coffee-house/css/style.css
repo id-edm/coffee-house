@@ -50,6 +50,11 @@ li {
   margin: 20px 40px;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 .nav__menu_list {
   display: flex;
   justify-content: center;
@@ -136,6 +141,7 @@ li {
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
   font-size: 16px;
+  margin: 0;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -143,7 +149,7 @@ li {
 
 .enjoy__button {
   position: relative;
-  padding: 32px 90px;
+  padding: 32px 100px;
   border-radius: 100px;
   background: #e1d4c9;
 }
@@ -194,6 +200,7 @@ li {
   text-align: center;
   font-family: Inter;
   font-size: 60px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
@@ -201,7 +208,10 @@ li {
 .slider {
   display: flex;
   justify-content: space-between;
+  width: 1360px;
   align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
 
 .slider__btn {
@@ -252,6 +262,7 @@ li {
 
 .contemt__description-title {
   align-self: stretch;
+  margin-top: 20px;
   color: #403f3d;
   text-align: center;
   font-family: Inter;
@@ -263,6 +274,7 @@ li {
 
 .content__description-subtitle {
   text-align: center;
+  line-height: 150%;
 }
 
 .content__description-price {

@@ -399,4 +399,35 @@ li {
 /*style about end*/
 
 /*style mobile app start*/
+.mobile__app-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container__offer {
+  display: flex;
+  align-items: center;
+}
 
+.offer {
+  width: 630px;
+  height: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.available__download {
+  display: flex;
+  width: 200px;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background-color: #E1D4C9;
+  border: 1px solid #665F55;
+}
+
+.mobile-screens {
+  margin-left: 100px;
+}

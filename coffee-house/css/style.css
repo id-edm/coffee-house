@@ -460,3 +460,40 @@ li {
 .mobile-screens {
   margin-left: 100px;
 }
+
+/* download button animation */
+
+.color__change-btn {
+  fill:#403F3D;
+  transition: ease-in 0.35s
+} 
+
+.available__download-appstore:hover .color__change-btn {
+  fill:#E1D4C9;
+}
+.available__download-appstore {
+  transition: ease-in 0.35s
+}
+
+.available__download-appstore:hover {
+  background: #665F55;
+  cursor: pointer;
+  color: #E1D4C9;
+}
+
+.available__download-googleplay:hover .color__change-btn {
+  fill:#E1D4C9;
+}
+.available__download-googleplay {
+  transition: ease-in 0.35s
+}
+
+.available__download-googleplay:hover {
+  background: #665F55;
+  cursor: pointer;
+  color: #E1D4C9;
+}
+
+/*style mobile app end*/
+
+

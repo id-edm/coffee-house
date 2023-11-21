@@ -464,36 +464,47 @@ li {
 /* download button animation */
 
 .color__change-btn {
-  fill:#403F3D;
-  transition: ease-in 0.35s
-} 
+  fill: #403f3d;
+  transition: ease-in 0.35s;
+}
 
 .available__download-appstore:hover .color__change-btn {
-  fill:#E1D4C9;
+  fill: #e1d4c9;
 }
 .available__download-appstore {
-  transition: ease-in 0.35s
+  transition: ease-in 0.35s;
 }
 
 .available__download-appstore:hover {
-  background: #665F55;
+  background: #665f55;
   cursor: pointer;
-  color: #E1D4C9;
+  color: #e1d4c9;
 }
 
 .available__download-googleplay:hover .color__change-btn {
-  fill:#E1D4C9;
+  fill: #e1d4c9;
 }
 .available__download-googleplay {
-  transition: ease-in 0.35s
+  transition: ease-in 0.35s;
 }
 
 .available__download-googleplay:hover {
-  background: #665F55;
+  background: #665f55;
   cursor: pointer;
-  color: #E1D4C9;
+  color: #e1d4c9;
 }
-
 /*style mobile app end*/
 
+/*style footer start*/
 
+.social__btn {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #C1B6AD;
+
+
+
+}

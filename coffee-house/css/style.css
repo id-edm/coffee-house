@@ -541,7 +541,7 @@ li {
 
 .footer__contact {
   padding-left: 100px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .contact__info-title {
@@ -558,13 +558,14 @@ li {
 }
 
 .contact__list-item {
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   width: 180px;
 }
 
 .contact__list-item:last-child {
   margin-bottom: 0;
-}
+  width: 100%;
+} 
 
 .contact__icon {
   margin-right: 5px;

@@ -3,7 +3,7 @@
   font-family: Inter;
   font-style: Regular;
   font-weight: 400;
-  src: url("../assets/fonts/Inter-Regular.ttf");
+  src: url("../../../assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: Inter;
   font-style: SemiBold;
   font-weight: 600;
-  src: url("../assets/fonts/Inter-SemiBold.ttf");
+  src: url("../../../assets/fonts/Inter-SemiBold.ttf");
 }
 
 html {
@@ -106,7 +106,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../assets/img/img-hero.jpg) no-repeat center;
+  background: url(../../../assets/img/img-hero.jpg) no-repeat center;
   border-radius: 40px;
   margin: 0 40px;
   background-size: cover;

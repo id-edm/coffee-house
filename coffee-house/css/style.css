@@ -601,6 +601,7 @@ a.contact__link {
   stroke: #403f3d;
 }
 
+/* contact button animation */
 .underline__contact::after {
   content: "";
   margin: 0 auto;
@@ -617,6 +618,5 @@ a.contact__link {
   width: 100%;
   opacity: 1;
 }
-
 
 /*style footer end*/

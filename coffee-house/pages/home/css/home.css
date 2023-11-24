@@ -82,6 +82,10 @@ li {
   background-color: transparent;
   cursor: pointer;
 }
+.page__link-menu {
+  text-decoration: none;
+  color: inherit;
+}
 
 .btn__menu_icon {
   margin-left: 8px;

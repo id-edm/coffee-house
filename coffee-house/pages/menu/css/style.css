@@ -99,3 +99,131 @@
     opacity: 1;
   }
   /*style header end*/
+
+
+
+  /*style footer start*/
+.footer {
+    padding: 40px;
+  }
+  
+  .footer__wrapper {
+    border-radius: 40px;
+    padding: 100px;
+  }
+  
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #665f55;
+    margin-top: 53px;
+  }
+  
+  .footer__inner {
+    width: 530px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .title__h2-footer {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #e1d4c9;
+  }
+  
+  .social__btn {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #665f55;
+    border: 1px solid #c1b6ad;
+    margin-right: 7px;
+    transition: ease-in 0.35s;
+  }
+  
+  .social__btn:last-child {
+    margin-right: 0;
+  }
+  
+  .footer__contact {
+    padding-left: 100px;
+    margin-top: 8px;
+  }
+  
+  .contact__info-title {
+    color: #e1d4c9;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+  }
+  
+  .contact__list {
+    padding: 0;
+    margin-top: 38px;
+  }
+  
+  .contact__list-item {
+    margin-bottom: 14px;
+    width: 180px;
+  }
+  
+  .contact__list-item:last-child {
+    margin-bottom: 0;
+    width: 100%;
+  } 
+  
+  .contact__icon {
+    margin-right: 5px;
+  }
+  
+  a.contact__link {
+    text-decoration: none;
+    color: #e1d4c9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+  }
+  
+  .clock {
+    color: #e1d4c9;
+    cursor: default;
+  }
+  
+  /* social button animation */
+  .social__icon {
+    stroke: #e1d4c9;
+    transition: ease-in 0.35s;
+  }
+  
+  .social__btn:hover {
+    background-color: #e1d4c9;
+    cursor: pointer;
+    stroke: #e1d4c9;
+  }
+  
+  .social__btn:hover .social__icon {
+    stroke: #403f3d;
+  }
+  
+  /* contact button animation */
+  .underline__contact::after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    background:  #e1d4c9;
+    height: 2px;
+    width: 0%;
+    transition: 0.8s, opacity 0.8s;
+    border-radius: 100px;
+    opacity: 0;
+  }
+  
+  .underline__contact:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  /*style footer end*/

@@ -70,7 +70,6 @@ li {
 
 .menu {
   display: flex;
-  padding: 0;
   border: none;
   font: inherit;
   color: inherit;
@@ -102,12 +101,7 @@ li {
 
 /*style enjoy start*/
 .enjoy {
-  display: flex;
-  max-width: 1360px;
   padding: 100px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   background: url(../../../assets/img/img-hero.jpg) no-repeat center;
   border-radius: 40px;
   margin: 0 40px;
@@ -210,9 +204,10 @@ li {
 .slider {
   display: flex;
   justify-content: space-between;
-  width: 1360px;
+  width: 100%;
   align-items: center;
   gap: 40px;
+  padding: 0% 40;
   margin-top: 40px;
 }
 
@@ -329,11 +324,7 @@ li {
 }
 
 .about__wrappper-column {
-  max-width: 1360px;
-  align-items: flex-start;
-  align-self: stretch;
   display: flex;
-  justify-content: center;
   gap: 40px;
   margin: 0 40px;
 }

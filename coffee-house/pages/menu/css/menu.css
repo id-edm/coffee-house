@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Inter";
-  background: #e1d4c9;
+  /*background: #e1d4c9;*/
 }
 
 ol,
@@ -115,11 +115,30 @@ li {
 /*style header end*/
 
 /*style menu start*/
+.menu__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
+
+}
 .coffee__card {
   width: 310px;
   min-height: 506px;
   border: solid 1px #C1B6AD;
   border-radius: 40px;
+}
+
+.coffee{
+
 }
 
 .coffee__card-top {
@@ -139,7 +158,7 @@ li {
   cursor: pointer;
 }
 
-.coffee img:hover {
+.coffee__card-img:hover {
   transform: scale(1);
 }
 

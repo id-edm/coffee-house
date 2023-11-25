@@ -211,6 +211,7 @@ li {
   font-weight: 600;
   line-height: 125%;
 }
+
 .slider {
   display: flex;
   justify-content: space-between;
@@ -437,6 +438,8 @@ li {
   border: 1px solid #665f55;
   margin-top: 22px;
   margin-right: 20px;
+  text-decoration: none;
+  color: initial;
 }
 
 .description__btn {
@@ -503,15 +506,12 @@ li {
 }
 
 .footer__wrapper {
-  border-radius: 40px;
-  padding: 100px;
-}
-
-.footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   background-color: #665f55;
   margin-top: 53px;
+  border-radius: 40px;
+  padding: 100px;
 }
 
 .footer__inner {
@@ -520,15 +520,15 @@ li {
   flex-wrap: wrap;
 }
 
-.title__h2-footer {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #e1d4c9;
+.footer__socials {
+  display: flex;
+  justify-content: center;
 }
 
 .social__btn {
   width: 60px;
   height: 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -536,6 +536,29 @@ li {
   border: 1px solid #c1b6ad;
   margin-right: 7px;
   transition: ease-in 0.35s;
+}
+
+.title__h2 {
+  margin-top: 100px;
+  color: #403f3d;
+  text-align: start;
+  font-family: Inter;
+  font-size: 60px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.text__italic {
+  color: #b0907a;
+  font-style: italic;
+}
+
+.title__h2-footer {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #e1d4c9;
 }
 
 .social__btn:last-child {
@@ -553,6 +576,7 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
+  cursor: default;
 }
 
 .contact__list {
@@ -568,7 +592,7 @@ li {
 .contact__list-item:last-child {
   margin-bottom: 0;
   width: 100%;
-} 
+}
 
 .contact__icon {
   margin-right: 5px;
@@ -580,7 +604,8 @@ a.contact__link {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
+  /* 24px */
 }
 
 .clock {
@@ -609,7 +634,7 @@ a.contact__link {
   content: "";
   margin: 0 auto;
   display: block;
-  background:  #e1d4c9;
+  background: #e1d4c9;
   height: 2px;
   width: 0%;
   transition: 0.8s, opacity 0.8s;
@@ -621,4 +646,5 @@ a.contact__link {
   width: 100%;
   opacity: 1;
 }
+
 /*style footer end*/

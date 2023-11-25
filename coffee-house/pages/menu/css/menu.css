@@ -112,8 +112,69 @@ li {
   width: 100%;
   opacity: 1;
 }
-
 /*style header end*/
+
+/*style menu start*/
+.coffee__card {
+  width: 310px;
+  min-height: 506px;
+  border: solid 1px #C1B6AD;
+  border-radius: 40px;
+}
+
+.coffee__card-top {
+  border-radius: 40px;
+  overflow: hidden;
+
+}
+
+.coffee__card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.coffee img:hover {
+  transform: scale(1);
+}
+
+/* description cards start*/
+.coffee__card-descripion {
+  margin: 20px;
+}
+
+.coffe__card-title {
+  align-self: stretch;
+  margin-top: 20px;
+  color: #403f3d;
+  text-align: start;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.coffe__card-subtitle {
+  text-align: start;
+  line-height: 150%;
+}
+
+.coffe__card-price {
+  color: #403f3d;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+/* description cards end*/
+
 
 
 

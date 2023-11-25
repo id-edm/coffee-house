@@ -48,7 +48,7 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  margin: 20px 40px;
+  margin: 16px 40px;
 }
 
 .logo {
@@ -120,6 +120,92 @@ li {
   justify-content: center;
 }
 
+.menu__offer-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__offer-title {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__offer-title h2 {
+  margin: 0;
+  margin-bottom: 40px;
+} 
+
+.title__h2 {
+  color: #403f3d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.text__italic {
+  color: #b0907a;
+  font-style: italic;
+}
+
+.title__h2-footer {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #e1d4c9;
+}
+
+/*menu button*/
+.menu__offer-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn__item {
+  width: 124px;
+  height: 46px;
+  background-color: #665F55;
+  border-radius: 40px;
+  margin-right: 20px;
+  border: none;
+  padding: 0;
+}
+
+.btn__item:last-child {
+  margin-right: 0;
+}
+
+.btn__item-center {
+  width: 90px;
+  height: 46px;
+}
+
+.btn__inner {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.btn__icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1D4C9;
+  border-radius: 30px;
+  margin-right: 8px;
+
+}
+
+.btn__description {
+
+}
+
 .menu__grid {
   display: grid;
   width: 100%;
@@ -128,8 +214,8 @@ li {
   justify-items: center;
   column-gap: 30px;
   row-gap: 30px;
-
 }
+
 .coffee__card {
   width: 310px;
   min-height: 506px;
@@ -137,14 +223,9 @@ li {
   border-radius: 40px;
 }
 
-.coffee{
-
-}
-
 .coffee__card-top {
   border-radius: 40px;
   overflow: hidden;
-
 }
 
 .coffee__card-img {
@@ -233,29 +314,6 @@ li {
   border: 1px solid #c1b6ad;
   margin-right: 7px;
   transition: ease-in 0.35s;
-}
-
-.title__h2 {
-  margin-top: 100px;
-  color: #403f3d;
-  text-align: start;
-  font-family: Inter;
-  font-size: 60px;
-  margin-bottom: 0;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 125%;
-}
-
-.text__italic {
-  color: #b0907a;
-  font-style: italic;
-}
-
-.title__h2-footer {
-  margin-top: 0;
-  margin-bottom: 40px;
-  color: #e1d4c9;
 }
 
 .social__btn:last-child {

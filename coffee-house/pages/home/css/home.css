@@ -198,6 +198,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 44px;
 
 }
 .title__h2 {
@@ -330,14 +331,12 @@ li {
 .about__title {
   display: flex;
   justify-content: center;
-  margin: 0 40px;
-  margin-bottom: 40px;
+  margin: 0 40px 38px;
 }
 
 .about__wrappper-column {
   display: flex;
   gap: 40px;
-  margin: 0 40px;
 }
 
 .column__left {
@@ -406,7 +405,7 @@ li {
 .mobile__app-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 104px;
 }
 .container__offer {
   margin-top: 40px;
@@ -427,9 +426,13 @@ li {
   line-height: 150%;
 }
 
+.download__button {
+  width: 220px;
+  margin-top: 4px;
+}
+
 .available__download {
   display: flex;
-  width: 200px;
   padding: 10px 20px;
   align-items: center;
   gap: 8px;
@@ -444,7 +447,7 @@ li {
 
 .description__btn {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .description__btn-title {
@@ -464,6 +467,7 @@ li {
 }
 
 .mobile-screens {
+  margin-top: -5px;
   margin-left: 100px;
 }
 
@@ -525,6 +529,14 @@ li {
   justify-content: center;
 }
 
+.link__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+
 .social__btn {
   width: 60px;
   height: 60px;
@@ -534,8 +546,12 @@ li {
   border-radius: 30px;
   background-color: #665f55;
   border: 1px solid #c1b6ad;
-  margin-right: 7px;
+  margin-right: 10px;
   transition: ease-in 0.35s;
+}
+
+.social__btn:last-child {
+  margin-right: 0;
 }
 
 .title__h2 {
@@ -561,13 +577,9 @@ li {
   color: #e1d4c9;
 }
 
-.social__btn:last-child {
-  margin-right: 0;
-}
-
 .footer__contact {
   padding-left: 100px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .contact__info-title {
@@ -581,31 +593,35 @@ li {
 
 .contact__list {
   padding: 0;
-  margin-top: 38px;
+  margin-top: 40px;;
 }
 
 .contact__list-item {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   width: 180px;
 }
 
 .contact__list-item:last-child {
+  display: flex;
+  align-items: center;
   margin-bottom: 0;
   width: 100%;
 }
 
 .contact__icon {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
-a.contact__link {
+.contact__link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #e1d4c9;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-  /* 24px */
+
 }
 
 .clock {

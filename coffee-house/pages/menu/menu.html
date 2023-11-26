@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon.ico">
   <link rel="stylesheet" href="../home/css/normalize.css">
   <link rel="stylesheet" href="./css/menu.css">
-  <title>Coffee-House</title>
+  <title>Menu</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <header class="header">
 
       <div class="logo">
-        <a class="page__link-home" href="../home/home.html" target="_blank">
+        <a class="page__link-home" href="../home/home.html">
           <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M69 25C69 35.4934 60.4934 44 50 44C39.5066 44 31 35.4934 31 25C31 14.5066 39.5066 6 50 6C60.4934 6 69 14.5066 69 25Z"
@@ -120,7 +120,7 @@
         <div class="menu__offer">
           <div class="menu__offer-inner">
             <div class="menu__offer-title">
-              <h2 class="title__h2">
+              <h2 class="menu__h2">
                 Behind each of our cups hides an <span class="text__italic">amazing surprise</span>
               </h2>
             </div>    
@@ -166,9 +166,9 @@
               </div>
               <div class="coffee__card-bottom">
                 <div class="coffee__card-descripion">
-                  <div class="coffe__card-title">Irish coffee</div>
-                  <div class="coffe__card-subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk</div>
-                  <div class="coffe__card-price">$7.00</div>
+                  <p class="coffe__card-title">Irish coffee</p>
+                  <p class="coffe__card-subtitle">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                  <span class="coffe__card-price">$7.00</span>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@
                   <p class="coffe__card-title">Kahlua coffee</p>
                   <p class="coffe__card-subtitle">Classic coffee with milk and Kahlua liqueur under a cap of frothed
                     milk</p>
-                  <p class="coffe__card-price">$7.00</p>
+                  <span class="coffe__card-price">$7.00</span>
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@
                 <div class="coffee__card-descripion">
                   <p class="coffe__card-title">Honey raf</p>
                   <p class="coffe__card-subtitle">Espresso with frothed milk, cream and aromatic honey</p>
-                  <p class="coffe__card-price">$5.50</p>
+                  <span class="coffe__card-price">$5.50</span>
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@
                 <div class="coffee__card-descripion">
                   <p class="coffe__card-title">Ice cappuccino</p>
                   <p class="coffe__card-subtitle">Cappuccino with soft thick foam in summer version with ice</p>
-                  <p class="coffe__card-price">$5.00</p>
+                  <span class="coffe__card-price">$5.00</span>
                 </div>
               </div>
             </div>
@@ -225,7 +225,7 @@
                 <div class="coffee__card-descripion">
                   <p class="coffe__card-title">Espresso</p>
                   <p class="coffe__card-subtitle">Classic black coffee</p>
-                  <p class="coffe__card-price">$4.50</p>
+                  <span class="coffe__card-price">$4.50</span>
                 </div>
               </div>
             </div>
@@ -240,7 +240,7 @@
                   <p class="coffe__card-title">Latte</p>
                   <p class="coffe__card-subtitle">Espresso coffee with the addition of steamed milk and dense milk foam
                   </p>
-                  <p class="coffe__card-price">$5.50</p>
+                  <span class="coffe__card-price">$5.50</span>
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@
                 <div class="coffee__card-descripion">
                   <p class="coffe__card-title">Latte macchiato</p>
                   <p class="coffe__card-subtitle">Espresso with frothed milk and chocolate</p>
-                  <p class="coffe__card-price">$5.00</p>
+                  <span class="coffe__card-price">$5.50</span>
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@
                 <div class="coffee__card-descripion">
                   <p class="coffe__card-title">Coffee with cognac</p>
                   <p class="coffe__card-subtitle">Fragrant black coffee with cognac and whipped cream</p>
-                  <p class="coffe__card-price">$6.50</p>
+                  <span class="coffe__card-price">$6.50</span>
                 </div>
               </div>
             </div>
@@ -322,11 +322,9 @@
 
 
         <div class="footer__contact">
-
           <div class="contact__info">
             <h3 class="contact__info-title">Contact us</h3>
             <ul class="contact__list">
-
               <li class="location contact__list-item underline__contact">
                 <a class="contact__link" target="_blank"
                   href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%83%D0%BD%D1%82%D0%B2%D0%B8%D0%BB%D0%BB,+%D0%9F%D0%B5%D0%BD%D1%81%D0%B8%D0%BB%D1%8C%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F,+%D0%A1%D0%A8%D0%90/@40.0412761,-76.4381018,16z/data=!4m6!3m5!1s0x89c627a718156fb9:0x7fc7c7e8cb2a530e!8m2!3d40.0392642!4d-76.4307964!16zL20vMF8yZjU?entry=ttu">
@@ -342,7 +340,6 @@
                   8558 Green Rd., LA
                 </a>
               </li>
-
               <li class="telephone contact__list-item underline__contact ">
                 <a class="contact__link" href="tel:+1(603)555-0123">
                   <svg class="contact__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -353,7 +350,6 @@
                   +1 (603) 555-0123
                 </a>
               </li>
-
               <li class="time contact__list-item">
                 <svg class="contact__icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <g clip-path="url(#clip0_217_1736)">
@@ -371,7 +367,6 @@
                 </svg>
                 <span class="clock">Mon-Sat: 9:00 AM – 23:00 PM</span>
               </li>
-
             </ul>
           </div>
         </div>

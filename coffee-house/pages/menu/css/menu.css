@@ -21,7 +21,11 @@ html {
 
 body {
   font-family: "Inter";
-  /*background: #e1d4c9;*/
+  background: #e1d4c9;
+}
+
+p {
+  margin: 0;
 }
 
 ol,
@@ -118,6 +122,7 @@ li {
 .menu__wrapper {
   display: flex;
   justify-content: center;
+  padding: 0 40px;
 }
 
 .menu__offer-inner {
@@ -166,11 +171,9 @@ li {
 }
 
 .btn__item {
-  width: 124px;
-  height: 46px;
   background-color: #665F55;
   border-radius: 40px;
-  margin-right: 20px;
+  margin-right: 16px;
   border: none;
   padding: 0;
 }
@@ -179,15 +182,11 @@ li {
   margin-right: 0;
 }
 
-.btn__item-center {
-  width: 90px;
-  height: 46px;
-}
-
 .btn__inner {
   display: flex;
   justify-content:center;
   align-items: center;
+  padding: 8px 16px 8px 8px
 }
 
 .btn__icon {
@@ -196,15 +195,45 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E1D4C9;
+  background-color: #C1B6AD;
   border-radius: 30px;
   margin-right: 8px;
-
+  transition: ease-in 0.35s;
 }
 
 .btn__description {
-
+  color:#403F3D;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
+
+.btn__active {
+  color:#E1D4C9;
+}
+
+.btn__inactive {
+  background-color: #E1D4C9;
+  border: 1px solid #C1B6AD;
+  transition: ease-in 0.35s;
+}
+
+/*animation button menu*/
+.btn__inactive:hover {
+  background-color: #665F55;
+  cursor: pointer;
+}
+
+.btn__inactive:hover .btn__icon {
+  background-color: #E1D4C9;
+}
+
+.btn__inactive:hover .btn__description {
+  color:#E1D4C9;
+}
+
 
 .menu__grid {
   display: grid;
@@ -212,13 +241,12 @@ li {
   grid-template-columns: repeat(4,1fr);
   justify-content: center;
   justify-items: center;
-  column-gap: 30px;
-  row-gap: 30px;
+  column-gap: 40px;
+  row-gap: 40px;
 }
 
 .coffee__card {
-  width: 310px;
-  min-height: 506px;
+  height: 503px;
   border: solid 1px #C1B6AD;
   border-radius: 40px;
 }
@@ -245,11 +273,10 @@ li {
 
 /* description cards start*/
 .coffee__card-descripion {
-  margin: 20px;
+  margin: 20px;  
 }
 
 .coffe__card-title {
-  align-self: stretch;
   margin-top: 20px;
   color: #403f3d;
   text-align: start;
@@ -261,6 +288,7 @@ li {
 }
 
 .coffe__card-subtitle {
+  margin-top: 12px;
   text-align: start;
   line-height: 150%;
 }

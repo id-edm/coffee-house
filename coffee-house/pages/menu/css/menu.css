@@ -73,6 +73,11 @@ li {
   cursor: pointer;
 }
 
+.nav__menu-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu {
   display: flex;
   cursor: default;

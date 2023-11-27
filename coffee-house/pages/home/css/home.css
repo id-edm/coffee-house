@@ -375,7 +375,6 @@ li {
   width: 100%;
   transition: 0.5s ease;
   transform: scale(1.1);
-  cursor: pointer;
 }
 
 .column__img-big img:hover {
@@ -394,7 +393,6 @@ li {
   width: 100%;
   transition: 0.5s ease;
   transform: scale(1.1);
-  cursor: pointer;
 }
 
 .column__img-small img:hover {

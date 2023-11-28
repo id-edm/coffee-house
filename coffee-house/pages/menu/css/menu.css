@@ -36,7 +36,6 @@ li {
 }
 
 .container {
-  display: block;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
@@ -79,7 +78,6 @@ li {
 }
 
 .menu {
-  display: flex;
   cursor: default;
 }
 
@@ -120,9 +118,7 @@ li {
 /*style header end*/
 
 /*style menu start*/
-.menu__wrapper {
-  display: flex;
-  justify-content: center;
+.menu__offer {
   padding: 0 40px;
 }
 
@@ -240,15 +236,15 @@ li {
 .menu__grid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat( auto-fit, minmax(310px, 1fr) );
   justify-content: center;
   justify-items: center;
-  column-gap: 40px;
-  row-gap: 40px;
+  gap:40px;
 }
 
 .coffee__card {
   height: 503px;
+  width: 310px;
   display: flex;
   flex-direction: column;
   border: solid 1px #C1B6AD;

@@ -364,7 +364,7 @@ li {
 }
 
 .column__img-big {
-  width: 660px;
+  width: 688px;
   height: 590px;
   border-radius: 20px;
   overflow: hidden;
@@ -374,7 +374,7 @@ li {
   height: 100%;
   width: 100%;
   transition: 0.5s ease;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .column__img-big img:hover {
@@ -724,9 +724,18 @@ li {
   .button__menu {
     display: none;
   }
+
+  .column__img-big {
+    width: 688px;
+  }
+  
+  .column__img-big img {
+    transform: scale(1.05);
+  }
 }
 /*media qwery 768px*/
 
 /*media qwery 380px*/
 
 /*media qwery 380px*/
+

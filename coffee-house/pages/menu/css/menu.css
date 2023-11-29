@@ -468,3 +468,26 @@ li {
 }
 
 /*style footer end*/
+
+/*бургер меню */
+.burger__btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: 2px solid  #665F55;
+  border-radius: 44px;
+}
+
+.burger__btn-line {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #403F3D;
+  border-radius: 1px;
+  margin: 3px auto;
+  transition: ease-in 0.25s;
+}
+/*бургер меню */

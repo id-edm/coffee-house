@@ -200,7 +200,6 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 44px;
-
 }
 .title__h2 {
   margin-top: 100px;
@@ -338,7 +337,7 @@ li {
 .about__wrappper-column {
   display: flex;
   gap: 40px;
-  padding:0 40px
+  padding: 0 40px;
 }
 
 .column__left {
@@ -593,7 +592,7 @@ li {
 
 .contact__list {
   padding: 0;
-  margin-top: 40px;;
+  margin-top: 40px;
 }
 
 .contact__list-item {
@@ -621,7 +620,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-
 }
 
 .clock {
@@ -665,20 +663,19 @@ li {
 /*style footer end*/
 
 /*media qwery 768px*/
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
   .enjoy {
     padding: 100px 60px;
   }
-  
 }
 
 @media (max-width: 1170px) {
-  
   .mobile__app-wrapper {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
+
   .mobile-screens {
     margin-top: 100px;
     margin-left: 0;
@@ -692,7 +689,6 @@ li {
 
   .title__h2-start {
     text-align: start;
-
   }
 
   .container__offer {
@@ -702,7 +698,7 @@ li {
   .footer__wrapper {
     padding: 100px 60px;
     margin-top: 58px;
-    gap:65px
+    gap: 65px;
   }
 
   .footer__inner {
@@ -710,23 +706,30 @@ li {
   }
 }
 
-@media (max-width: 880px) {
-.column__img-small {
-   display: none;
-}
-.about__wrappper-column {
-  flex-direction: column;
-}
-}
-
-@media (max-width: 770px){
+@media (max-width: 770px) {
   .column__img-small {
     display: none;
- }
- .about__wrappper-column {
-   flex-direction: column;
- }
+  }
 
+  /* изменение кнопки*/
+  .enjoy__button-menu {
+    right: 57%;
+  }
+
+  .enjoy__button-icon {
+    position: absolute;
+    left: 58%;
+    opacity: 1;
+  }
+  /* изменение кнопки*/
+
+  .about__wrappper-column {
+    flex-direction: column;
+  }
+
+  .column__img-big {
+    aspect-ratio: 660/565;
+  }
   .nav__menu {
     display: none;
   }
@@ -738,7 +741,7 @@ li {
   .column__img-big {
     width: 688px;
   }
-  
+
   .column__img-big img {
     transform: scale(1.05);
   }
@@ -748,4 +751,3 @@ li {
 /*media qwery 380px*/
 
 /*media qwery 380px*/
-

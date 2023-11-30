@@ -512,6 +512,7 @@ li {
 }
 /*бургер меню */
 
+/*media qwery 768px*/
 @media only screen and (max-width: 1439px) {
   .card__none {
     display: none;
@@ -532,9 +533,6 @@ li {
     padding-right: 0;
   }
 
-  .footer__wrapper {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 770px) {
@@ -562,3 +560,106 @@ li {
     flex-wrap: wrap;
   }
 }
+/*media qwery 768px*/
+
+/*media qwery 380px*/
+@media (max-width: 767px) {
+  .slider__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    margin: 18px 14px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  .menu__offer-btn {
+    margin-bottom: 38px;
+  }
+
+  .menu__grid {
+    gap: 41px;
+  }
+
+  .menu__offer {
+    padding: 0 16px;
+  }
+
+  .favourites__coffee-wrapper {
+    padding: 0 16px;
+  }
+
+  .about__title {
+    margin: 0 16px 38px;
+  }
+
+  .about__wrappper-column {
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .footer {
+    padding: 16px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 16px;
+    margin-top: 60px;
+    gap: 40px;
+  }
+
+  .mobile__app-wrapper {
+    padding: 0 16px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 16px;
+    margin-top: 60px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title__h2 {
+    font-size: 32px;
+  }
+
+  .btn__item {
+    margin-right: 8px;
+  }
+
+  .column__img-big {
+    aspect-ratio: 348/590;
+  }
+
+  .column__img-big img {
+    transform: scale(1.25);
+  }
+
+  .download__button {
+    margin-top: 3px;
+  }
+
+  .mobile__app-wrapper {
+    gap: 44px;
+  }
+
+  .footer {
+    margin-top: 24px;
+  }
+
+  .footer__wrapper {
+    gap: 5px;
+  }
+  .footer__wrapper {
+    padding-bottom: 50px;
+  }
+}
+
+/*media qwery 380px*/

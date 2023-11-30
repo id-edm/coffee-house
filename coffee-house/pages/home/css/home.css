@@ -524,7 +524,6 @@ li {
 
 .footer__wrapper {
   display: flex;
-  flex-wrap: wrap;
   background-color: #665f55;
   margin-top: 59px;
   border-radius: 40px;
@@ -737,8 +736,8 @@ li {
 
   .footer__wrapper {
     padding: 95px 60px;
-    margin-top: 58px;
-    gap: 65px;
+    margin-top: 60px;
+    gap: 68px;
   }
 
   .footer__inner {
@@ -759,7 +758,11 @@ li {
     display: none;
   }
 
-  /* изменение кнопки*/
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  /* изменение кнопки menu*/
   .enjoy__button-menu {
     right: 57%;
   }
@@ -769,7 +772,7 @@ li {
     left: 58%;
     opacity: 1;
   }
-  /* изменение кнопки*/
+  /* изменение кнопки menu*/
 
   .about__wrappper-column {
     flex-direction: column;
@@ -778,6 +781,7 @@ li {
   .column__img-big {
     aspect-ratio: 660/565;
   }
+
   .nav__menu {
     display: none;
   }

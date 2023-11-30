@@ -416,6 +416,7 @@ li {
 }
 .container__offer {
   margin-top: 40px;
+  max-width: 630px;
 }
 
 .offer {
@@ -473,7 +474,14 @@ li {
 }
 
 .mobile-screens {
+  display: flex;
+  align-items: center;
   margin-top: -5px;
+  max-width: 630px;
+}
+
+.mobile-screens img {
+  max-width: 100%;
 }
 
 /* download button animation */
@@ -678,7 +686,7 @@ li {
   cursor: pointer;
   width: 44px;
   height: 44px;
-  border: 2px solid  #665F55;
+  border: 2px solid #665f55;
   border-radius: 44px;
 }
 
@@ -686,7 +694,7 @@ li {
   display: block;
   width: 16px;
   height: 2px;
-  background: #403F3D;
+  background: #403f3d;
   border-radius: 1px;
   margin: 3px auto;
   transition: ease-in 0.25s;
@@ -706,6 +714,11 @@ li {
     align-items: center;
     gap: 108px;
     margin: 0;
+  }
+
+  .container__offer {
+    margin-top: 40px;
+    max-width: 100%;
   }
 }
 
@@ -735,12 +748,11 @@ li {
 
 @media (max-width: 770px) {
   .burger__btn {
-    display:flex;
-    
+    display: flex;
   }
 
   .menu__burger-none {
-    display:none;
+    display: none;
   }
 
   .column__img-small {

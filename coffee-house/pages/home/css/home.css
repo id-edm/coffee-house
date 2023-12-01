@@ -130,7 +130,7 @@ li {
 
 .title__wrapper {
   display: flex;
-  width: 530px;
+  max-width: 530px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -200,7 +200,6 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 44px;
-
 }
 .title__h2 {
   margin-top: 100px;
@@ -220,7 +219,6 @@ li {
   width: 100%;
   align-items: center;
   gap: 40px;
-  padding: 0% 40;
   margin-top: 40px;
 }
 
@@ -257,6 +255,15 @@ li {
   width: 1152px;
   flex-direction: column;
   align-items: center;
+}
+
+.slider__content-images {
+  display: flex;
+  aspect-ratio: 480/480;
+}
+
+.slider__content-images img {
+  width: 100%;
 }
 
 .slider__content-description {
@@ -332,12 +339,13 @@ li {
 .about__title {
   display: flex;
   justify-content: center;
-  margin: 0 40px 38px;
+  margin: 0 40px 42px;
 }
 
 .about__wrappper-column {
   display: flex;
   gap: 40px;
+  padding: 0 40px;
 }
 
 .column__left {
@@ -364,8 +372,7 @@ li {
 }
 
 .column__img-big {
-  width: 660px;
-  height: 590px;
+  aspect-ratio: 660/590;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -382,8 +389,7 @@ li {
 }
 
 .column__img-small {
-  width: 660px;
-  height: 430px;
+  aspect-ratio: 660/430;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -404,14 +410,16 @@ li {
 .mobile__app-wrapper {
   display: flex;
   justify-content: center;
+  gap: 100px;
   margin-top: 104px;
+  padding: 0 40px;
 }
 .container__offer {
   margin-top: 40px;
+  max-width: 630px;
 }
 
 .offer {
-  width: 630px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -466,8 +474,14 @@ li {
 }
 
 .mobile-screens {
+  display: flex;
+  align-items: center;
   margin-top: -5px;
-  margin-left: 100px;
+  max-width: 630px;
+}
+
+.mobile-screens img {
+  max-width: 100%;
 }
 
 /* download button animation */
@@ -510,9 +524,8 @@ li {
 
 .footer__wrapper {
   display: flex;
-  flex-wrap: wrap;
   background-color: #665f55;
-  margin-top: 53px;
+  margin-top: 59px;
   border-radius: 40px;
   padding: 100px;
 }
@@ -521,6 +534,7 @@ li {
   width: 530px;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 100px;
 }
 
 .footer__socials {
@@ -577,7 +591,8 @@ li {
 }
 
 .footer__contact {
-  padding-left: 100px;
+  display: flex;
+  justify-content: start;
   margin-top: 10px;
 }
 
@@ -592,7 +607,7 @@ li {
 
 .contact__list {
   padding: 0;
-  margin-top: 40px;;
+  margin-top: 40px;
 }
 
 .contact__list-item {
@@ -620,7 +635,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-
 }
 
 .clock {
@@ -661,5 +675,214 @@ li {
   width: 100%;
   opacity: 1;
 }
-
 /*style footer end*/
+
+/*бургер меню */
+.burger__btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #665f55;
+  border-radius: 44px;
+}
+
+.burger__btn-line {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #403f3d;
+  border-radius: 1px;
+  margin: 3px auto;
+  transition: ease-in 0.25s;
+}
+/*бургер меню */
+
+/*media qwery 768px*/
+@media (max-width: 1400px) {
+  .enjoy {
+    padding: 100px 60px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .mobile__app-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 108px;
+    margin: 0;
+  }
+
+  .container__offer {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .title__h2 {
+    text-align: center;
+  }
+
+  .title__h2-start {
+    text-align: start;
+  }
+
+  .container__offer {
+    margin: 0;
+  }
+
+  .footer__wrapper {
+    padding: 95px 60px;
+    margin-top: 60px;
+    gap: 68px;
+  }
+
+  .footer__inner {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .burger__btn {
+    display: flex;
+  }
+
+  .menu__burger-none {
+    display: none;
+  }
+
+  .column__img-small {
+    display: none;
+  }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  /* изменение кнопки menu*/
+  .enjoy__button-menu {
+    right: 57%;
+  }
+
+  .enjoy__button-icon {
+    position: absolute;
+    left: 58%;
+    opacity: 1;
+  }
+  /* изменение кнопки menu*/
+
+  .about__wrappper-column {
+    flex-direction: column;
+  }
+
+  .column__img-big {
+    aspect-ratio: 660/565;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .button__menu {
+    display: none;
+  }
+
+  .column__img-big img {
+    transform: scale(1.05);
+  }
+}
+/*media qwery 768px*/
+
+/*media qwery 380px*/
+@media (max-width: 767px) {
+  .slider__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    margin: 20px 14px;
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 115%;
+  }
+
+  .enjoy {
+    padding: 60px 16px;
+    margin: 0 16px;
+  }
+  .favourites__coffee-wrapper {
+    padding: 0 16px;
+  }
+
+  .about__title {
+    margin: 0 16px 38px;
+  }
+
+  .about__wrappper-column {
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .footer {
+    padding: 16px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 16px;
+    margin-top: 60px;
+    gap: 40px;
+  }
+
+  .mobile__app-wrapper {
+    padding: 0 16px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 16px;
+    margin-top: 60px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title__h2 {
+    font-size: 32px;
+  }
+
+  .column__img-big {
+    aspect-ratio: 348/590;
+  }
+
+  .column__img-big img {
+    transform: scale(1.25);
+  }
+
+  .download__button {
+    margin-top: 3px;
+  }
+
+  .mobile__app-wrapper {
+    gap: 44px;
+  }
+
+  .footer {
+    margin-top: 26px;
+  }
+
+  .footer__wrapper {
+    gap: 5px;
+}
+.footer__wrapper {
+  padding-bottom: 50px
+  
+}
+}
+
+/*media qwery 380px*/

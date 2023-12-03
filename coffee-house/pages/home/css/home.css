@@ -493,6 +493,7 @@ li {
 .available__download-appstore:hover .color__change-btn {
   fill: #e1d4c9;
 }
+
 .available__download-appstore {
   transition: ease-in 0.35s;
 }
@@ -506,6 +507,7 @@ li {
 .available__download-googleplay:hover .color__change-btn {
   fill: #e1d4c9;
 }
+
 .available__download-googleplay {
   transition: ease-in 0.35s;
 }
@@ -884,5 +886,79 @@ li {
   
 }
 }
-
 /*media qwery 380px*/
+
+@media (hover: hover) and (pointer: fine) {
+
+  .enjoy__button:hover .enjoy__button-menu {
+    transform: translate(8px);
+  }
+
+  .enjoy__button:hover .enjoy__button-icon {
+    opacity: 1;
+  }
+  
+  .slider__btn:hover {
+    background: #665f55;
+    cursor: pointer;
+  }
+
+  .slider__btn:hover .btn-icon {
+    transform: scale(1.15);
+    stroke: #e1d4c9;
+  }
+
+  .column__img-big img:hover {
+    transform: scale(1);
+  }
+
+  .column__img-small img:hover {
+    transform: scale(1);
+  }
+
+  .available__download-appstore:hover .color__change-btn {
+    fill: #e1d4c9;
+  }
+
+  .available__download-appstore:hover {
+    background: #665f55;
+    cursor: pointer;
+    color: #e1d4c9;
+  }
+
+  .available__download-googleplay:hover .color__change-btn {
+    fill: #e1d4c9;
+  }
+
+  .available__download-googleplay:hover {
+    background: #665f55;
+    cursor: pointer;
+    color: #e1d4c9;
+  }
+
+  .social__btn:hover {
+    background-color: #e1d4c9;
+    cursor: pointer;
+    stroke: #e1d4c9;
+  }
+
+  .social__btn:hover .social__icon {
+    stroke: #403f3d;
+  }
+
+  .underline__contact:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .enjoy__button:hover .enjoy__button-menu {
+    transform: translate(8px);
+  }
+
+  .enjoy__button:hover .enjoy__button-icon {
+    opacity: 1;
+  }
+}
+

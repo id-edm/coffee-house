@@ -308,6 +308,7 @@ li {
 
 /*update button*/
 .update__button {
+  display: none;
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -315,18 +316,17 @@ li {
   border-width: 0;
   border: 1px solid #665f55;
   background-color: #e1d4c9;
-  display: block;
   position: relative;
   margin: 0 auto;
   margin-top: 40px;
 }
 
 .update__button svg {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block;
 }
 
 /*style footer start*/
@@ -340,6 +340,7 @@ li {
   margin-top: 58px;
   border-radius: 40px;
   padding: 100px;
+  gap: 100px
 }
 
 .footer__inner {
@@ -486,7 +487,6 @@ li {
   width: 100%;
   opacity: 1;
 }
-
 /*style footer end*/
 
 /*бургер меню */
@@ -559,6 +559,16 @@ li {
   .footer__wrapper {
     flex-wrap: wrap;
   }
+
+  .update__button {
+    display: block;
+  }
+  
+  .update__button svg {
+    display: inline-block;
+    
+  }
+
 }
 /*media qwery 768px*/
 

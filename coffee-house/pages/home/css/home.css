@@ -104,10 +104,6 @@ li {
   opacity: 0;
 }
 
-.underline:hover::after {
-  width: 100%;
-  opacity: 1;
-}
 /*style header end*/
 
 /*style enjoy start*/
@@ -185,13 +181,6 @@ li {
   opacity: 0;
 }
 
-.enjoy__button:hover .enjoy__button-menu {
-  transform: translate(8px);
-}
-
-.enjoy__button:hover .enjoy__button-icon {
-  opacity: 1;
-}
 /*style enjoy end*/
 
 /*style favourites coffee start*/
@@ -201,6 +190,7 @@ li {
   justify-content: center;
   padding: 0 44px;
 }
+
 .title__h2 {
   margin-top: 100px;
   color: #403f3d;
@@ -235,19 +225,9 @@ li {
   transition: ease-in 0.25s;
 }
 
-.slider__btn:hover {
-  background: #665f55;
-  cursor: pointer;
-}
-
 .btn-icon {
   stroke: #403f3d;
   transition: ease-in 0.25s;
-}
-
-.slider__btn:hover .btn-icon {
-  transform: scale(1.15);
-  stroke: #e1d4c9;
 }
 
 .slider__content {
@@ -319,6 +299,7 @@ li {
 .slider__controls-inactive {
   background: #c1b6ad;
 }
+
 /*style favourites coffee start*/
 
 /*style about start*/
@@ -384,10 +365,6 @@ li {
   transform: scale(1.1);
 }
 
-.column__img-big img:hover {
-  transform: scale(1);
-}
-
 .column__img-small {
   aspect-ratio: 660/430;
   border-radius: 20px;
@@ -401,9 +378,6 @@ li {
   transform: scale(1.1);
 }
 
-.column__img-small img:hover {
-  transform: scale(1);
-}
 /*style about end*/
 
 /*style mobile app start*/
@@ -414,6 +388,7 @@ li {
   margin-top: 104px;
   padding: 0 40px;
 }
+
 .container__offer {
   margin-top: 40px;
   max-width: 630px;
@@ -490,33 +465,14 @@ li {
   transition: ease-in 0.35s;
 }
 
-.available__download-appstore:hover .color__change-btn {
-  fill: #e1d4c9;
-}
-
 .available__download-appstore {
   transition: ease-in 0.35s;
-}
-
-.available__download-appstore:hover {
-  background: #665f55;
-  cursor: pointer;
-  color: #e1d4c9;
-}
-
-.available__download-googleplay:hover .color__change-btn {
-  fill: #e1d4c9;
 }
 
 .available__download-googleplay {
   transition: ease-in 0.35s;
 }
 
-.available__download-googleplay:hover {
-  background: #665f55;
-  cursor: pointer;
-  color: #e1d4c9;
-}
 /*style mobile app end*/
 
 /*style footer start*/
@@ -650,16 +606,6 @@ li {
   transition: ease-in 0.35s;
 }
 
-.social__btn:hover {
-  background-color: #e1d4c9;
-  cursor: pointer;
-  stroke: #e1d4c9;
-}
-
-.social__btn:hover .social__icon {
-  stroke: #403f3d;
-}
-
 /* contact button animation */
 .underline__contact::after {
   content: "";
@@ -673,10 +619,6 @@ li {
   opacity: 0;
 }
 
-.underline__contact:hover::after {
-  width: 100%;
-  opacity: 1;
-}
 /*style footer end*/
 
 /*бургер меню */
@@ -700,16 +642,17 @@ li {
   margin: 3px auto;
   transition: ease-in 0.25s;
 }
+
 /*бургер меню */
 
 /*media qwery 768px*/
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .enjoy {
     padding: 100px 60px;
   }
 }
 
-@media (max-width: 1170px) {
+@media only screen and (max-width: 1170px) {
   .mobile__app-wrapper {
     flex-direction: column;
     align-items: center;
@@ -723,7 +666,7 @@ li {
   }
 }
 
-@media (max-width: 1070px) {
+@media only screen and (max-width: 1070px) {
   .title__h2 {
     text-align: center;
   }
@@ -774,6 +717,7 @@ li {
     left: 58%;
     opacity: 1;
   }
+
   /* изменение кнопки menu*/
 
   .about__wrappper-column {
@@ -796,6 +740,7 @@ li {
     transform: scale(1.05);
   }
 }
+
 /*media qwery 768px*/
 
 /*media qwery 380px*/
@@ -819,6 +764,7 @@ li {
     padding: 60px 16px;
     margin: 0 16px;
   }
+
   .favourites__coffee-wrapper {
     padding: 0 16px;
   }
@@ -880,16 +826,25 @@ li {
 
   .footer__wrapper {
     gap: 5px;
+  }
+
+  .footer__wrapper {
+    padding-bottom: 50px
+  }
 }
-.footer__wrapper {
-  padding-bottom: 50px
-  
-}
-}
+
 /*media qwery 380px*/
 
 @media (hover: hover) and (pointer: fine) {
 
+  /* подчеркивание navbar*/
+  .underline:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  /* подчеркивание навбар*/
+
+  /* кнопка меню секции enjoy*/
   .enjoy__button:hover .enjoy__button-menu {
     transform: translate(8px);
   }
@@ -897,7 +852,9 @@ li {
   .enjoy__button:hover .enjoy__button-icon {
     opacity: 1;
   }
-  
+  /* кнопка меню секции enjoy*/
+
+  /* кнопки слайдера*/
   .slider__btn:hover {
     background: #665f55;
     cursor: pointer;
@@ -907,7 +864,9 @@ li {
     transform: scale(1.15);
     stroke: #e1d4c9;
   }
+  /* кнопки слайдера*/
 
+  /*картинки секции about*/
   .column__img-big img:hover {
     transform: scale(1);
   }
@@ -915,7 +874,9 @@ li {
   .column__img-small img:hover {
     transform: scale(1);
   }
+  /*картинки секции about*/
 
+  /*кнопки загрузки секции download*/
   .available__download-appstore:hover .color__change-btn {
     fill: #e1d4c9;
   }
@@ -935,7 +896,9 @@ li {
     cursor: pointer;
     color: #e1d4c9;
   }
+  /*кнопки загрузки секции download*/
 
+  /*кнопки социальных сетей*/
   .social__btn:hover {
     background-color: #e1d4c9;
     cursor: pointer;
@@ -945,20 +908,12 @@ li {
   .social__btn:hover .social__icon {
     stroke: #403f3d;
   }
+  /*кнопки социальных сетей*/
 
+  /*подчеркивание в контактах*/
   .underline__contact:hover::after {
     width: 100%;
     opacity: 1;
   }
+  /*подчеркивание в контактах*/
 }
-
-@media (hover: none) {
-  .enjoy__button:hover .enjoy__button-menu {
-    transform: translate(8px);
-  }
-
-  .enjoy__button:hover .enjoy__button-icon {
-    opacity: 1;
-  }
-}
-

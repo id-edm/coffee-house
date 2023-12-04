@@ -111,10 +111,6 @@ li {
   opacity: 0;
 }
 
-.underline:hover::after {
-  width: 100%;
-  opacity: 1;
-}
 /*style header end*/
 
 /*style menu start*/
@@ -218,20 +214,6 @@ li {
   transition: ease-in 0.35s;
 }
 
-/*animation button menu*/
-.btn__inactive:hover {
-  background-color: #665f55;
-  cursor: pointer;
-}
-
-.btn__inactive:hover .btn__icon {
-  background-color: #e1d4c9;
-}
-
-.btn__inactive:hover .btn__description {
-  color: #e1d4c9;
-}
-
 .menu__grid {
   display: grid;
   width: 100%;
@@ -264,10 +246,6 @@ li {
   width: 100%;
   transition: 0.5s ease;
   transform: scale(1.1);
-}
-
-.coffee__card:hover .coffee__card-img {
-  transform: scale(1);
 }
 
 /* description cards start*/
@@ -304,6 +282,7 @@ li {
   font-weight: 600;
   line-height: 125%;
 }
+
 /* description cards end*/
 
 /*update button*/
@@ -460,16 +439,6 @@ li {
   transition: ease-in 0.35s;
 }
 
-.social__btn:hover {
-  background-color: #e1d4c9;
-  cursor: pointer;
-  stroke: #e1d4c9;
-}
-
-.social__btn:hover .social__icon {
-  stroke: #403f3d;
-}
-
 /* contact button animation */
 .underline__contact::after {
   content: "";
@@ -483,10 +452,6 @@ li {
   opacity: 0;
 }
 
-.underline__contact:hover::after {
-  width: 100%;
-  opacity: 1;
-}
 /*style footer end*/
 
 /*бургер меню */
@@ -510,7 +475,58 @@ li {
   margin: 3px auto;
   transition: ease-in 0.25s;
 }
+
 /*бургер меню */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* подчеркивание navbar*/
+  .underline:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  /* подчеркивание navbar*/
+
+  /*анимация кнопки меню*/
+  .btn__inactive:hover {
+    background-color: #665f55;
+    cursor: pointer;
+  }
+
+  .btn__inactive:hover .btn__icon {
+    background-color: #e1d4c9;
+  }
+
+  .btn__inactive:hover .btn__description {
+    color: #e1d4c9;
+  }
+  /*анимация кнопки меню*/
+
+  /*кнопки социальных сетей*/
+  .social__btn:hover {
+    background-color: #e1d4c9;
+    cursor: pointer;
+    stroke: #e1d4c9;
+  }
+
+  .social__btn:hover .social__icon {
+    stroke: #403f3d;
+  }
+  /*кнопки социальных сетей*/
+
+  /*анимация карточек товаров*/
+  .coffee__card:hover .coffee__card-img {
+    transform: scale(1);
+  }
+  /*анимация карточек товаров*/
+
+  /*подчеркивание в контактах*/
+  .underline__contact:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+  /*подчеркивание в контактах*/
+}
 
 /*media qwery 768px*/
 @media only screen and (max-width: 1439px) {
@@ -523,6 +539,7 @@ li {
   .card__none-1 {
     display: none;
   }
+
   .footer__wrapper {
     padding: 95px 60px;
     margin-top: 60px;
@@ -563,13 +580,14 @@ li {
   .update__button {
     display: block;
   }
-  
+
   .update__button svg {
     display: inline-block;
-    
+
   }
 
 }
+
 /*media qwery 768px*/
 
 /*media qwery 380px*/
@@ -667,6 +685,7 @@ li {
   .footer__wrapper {
     gap: 5px;
   }
+
   .footer__wrapper {
     padding-bottom: 50px;
   }

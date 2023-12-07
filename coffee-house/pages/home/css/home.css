@@ -108,29 +108,42 @@ li {
 
 /*style enjoy start*/
 .enjoy {
+  position: relative;
   padding: 100px;
-  background: url(../../../assets/img/img-hero.jpg) no-repeat center;
-  border-radius: 40px;
   margin: 0 40px;
   background-size: cover;
 }
 
 .title {
+  position: relative;
   color: #e1d4c9;
   font-size: 72px;
   font-style: normal;
   font-weight: 600;
   line-height: 105%;
   margin: 0;
+  z-index: 1;
+}
+
+.enjoy__bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
 }
 
 .title__wrapper {
+  position: relative;
   display: flex;
   max-width: 530px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
+  z-index: 1;
 }
 
 .text__italic {

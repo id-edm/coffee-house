@@ -105,8 +105,6 @@ li {
   opacity: 0;
 }
 
-/*style header end*/
-
 /*style enjoy start*/
 .enjoy {
   position: relative;
@@ -194,8 +192,6 @@ li {
   transition: all ease-in 0.5s;
   opacity: 0;
 }
-
-/*style enjoy end*/
 
 /*style favourites coffee start*/
 .favourites__coffee-wrapper {
@@ -314,8 +310,6 @@ li {
   background: #c1b6ad;
 }
 
-/*style favourites coffee start*/
-
 /*style about start*/
 .about {
   display: flex;
@@ -391,8 +385,6 @@ li {
   transition: 0.5s ease;
   transform: scale(1.1);
 }
-
-/*style about end*/
 
 /*style mobile app start*/
 .mobile__app-wrapper {
@@ -486,8 +478,6 @@ li {
 .available__download-googleplay {
   transition: ease-in 0.35s;
 }
-
-/*style mobile app end*/
 
 /*style footer start*/
 .footer {
@@ -633,8 +623,6 @@ li {
   opacity: 0;
 }
 
-/*style footer end*/
-
 /*бургер меню */
 .burger__btn {
   position: relative;
@@ -659,22 +647,22 @@ li {
   top: 50%;
 }
 
-.burger__btn-li:nth-child(1) {
+.burger__btn span:nth-child(1) {
   background-color: #403F3D;
   transform: translateY(4px);
 }
 
-.burger__btn-li:nth-child(2) {
+.burger__btn span:nth-child(2) {
   background-color: #403F3D;
   transform: translateY(-4px);
 }
 
 /*анимация бургер меню*/
-.burger--transform .burger__btn-li:nth-child(1) {
+.burger--transform span:nth-child(1) {
   transform: translateY(0px) rotate(45deg);
 }
 
-.burger--transform .burger__btn-li:nth-child(2) {
+.burger--transform span:nth-child(2) {
   transform: translateY(0px) rotate(-45deg);
 }
 
@@ -735,7 +723,7 @@ li {
     right: 0;
     top: 100px;
     width: 100%;
-    height:924px;
+    height:100vh;
     background-color: #e1d4c9;
     z-index: 2;
     font-size: 32px;
@@ -807,8 +795,6 @@ li {
     transform: scale(1.05);
   }
 }
-
-/*media qwery 768px*/
 
 /*media qwery 380px*/
 @media (max-width: 767px) {
@@ -915,8 +901,6 @@ li {
     opacity: 1;
   }
 
-  /* подчеркивание навбар*/
-
   /* кнопка меню секции enjoy*/
   .enjoy__button:hover .enjoy__button-menu {
     transform: translate(8px);
@@ -925,8 +909,6 @@ li {
   .enjoy__button:hover .enjoy__button-icon {
     opacity: 1;
   }
-
-  /* кнопка меню секции enjoy*/
 
   /* кнопки слайдера*/
   .slider__btn:hover {
@@ -939,8 +921,6 @@ li {
     stroke: #e1d4c9;
   }
 
-  /* кнопки слайдера*/
-
   /*картинки секции about*/
   .column__img-big img:hover {
     transform: scale(1);
@@ -949,8 +929,6 @@ li {
   .column__img-small img:hover {
     transform: scale(1);
   }
-
-  /*картинки секции about*/
 
   /*кнопки загрузки секции download*/
   .available__download-appstore:hover .color__change-btn {
@@ -973,8 +951,6 @@ li {
     color: #e1d4c9;
   }
 
-  /*кнопки загрузки секции download*/
-
   /*кнопки социальных сетей*/
   .social__btn:hover {
     background-color: #e1d4c9;
@@ -986,13 +962,9 @@ li {
     stroke: #403f3d;
   }
 
-  /*кнопки социальных сетей*/
-
   /*подчеркивание в контактах*/
   .underline__contact:hover::after {
     width: 100%;
     opacity: 1;
   }
-
-  /*подчеркивание в контактах*/
 }

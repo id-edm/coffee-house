@@ -73,6 +73,7 @@ li {
 
 .nav__menu_item {
   margin: 0 20px;
+  line-height: 120%;
   cursor: pointer;
 }
 
@@ -81,7 +82,7 @@ li {
   color: inherit;
 }
 
-.menu {
+.menu__btn {
   display: flex;
   align-items: center;
   border: none;
@@ -93,6 +94,12 @@ li {
 
 .btn__menu-none {
   display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 18px ;
 }
 
 .page__link-menu {
@@ -111,7 +118,7 @@ li {
   width: 0%;
   background: #403f3d;
   height: 2px;
-  transition: 0.8s, opacity 0.8s;
+  transition: 0.35s, opacity 0.35s;
   border-radius: 100px;
   opacity: 0;
 }
@@ -193,14 +200,14 @@ li {
   position: absolute;
   right: 50%;
   transform: translate(50%, 0);
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.25s;
 }
 
 .enjoy__button-icon {
   position: absolute;
   left: 60%;
   transform: translate(0, 10%);
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.25s;
   opacity: 0;
 }
 
@@ -483,11 +490,11 @@ li {
 }
 
 .available__download-appstore {
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
 
 .available__download-googleplay {
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
 
 /*style footer start*/
@@ -618,7 +625,7 @@ li {
 /* social button animation */
 .social__icon {
   stroke: #e1d4c9;
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
 
 /* contact button animation */
@@ -629,7 +636,7 @@ li {
   background: #e1d4c9;
   height: 2px;
   width: 0%;
-  transition: 0.8s, opacity 0.8s;
+  transition: 0.35s, opacity 0.25s;
   border-radius: 100px;
   opacity: 0;
 }
@@ -758,10 +765,6 @@ li {
   .btn__menu-none {
     margin-top: 35px;
     display: block;
-  }
-
-  .nav__menu_item {
-    line-height: 120%;
   }
 
   .btn__menu_icon {

@@ -31,13 +31,18 @@ li {
   list-style: none;
 }
 
+.wrapper__body {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .container {
   display: block;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   background: #e1d4c9;
-  overflow: hidden;
 }
 
 /*style header start*/
@@ -46,6 +51,7 @@ li {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
+  color: #403F3D;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -55,6 +61,7 @@ li {
 .logo {
   display: flex;
   justify-content: center;
+  z-index: 3;
 }
 
 .nav__menu_list {
@@ -66,6 +73,7 @@ li {
 
 .nav__menu_item {
   margin: 0 20px;
+  line-height: 120%;
   cursor: pointer;
 }
 
@@ -74,13 +82,24 @@ li {
   color: inherit;
 }
 
-.menu {
+.menu__btn {
   display: flex;
+  align-items: center;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn__menu-none {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 18px ;
 }
 
 .page__link-menu {
@@ -99,12 +118,10 @@ li {
   width: 0%;
   background: #403f3d;
   height: 2px;
-  transition: 0.8s, opacity 0.8s;
+  transition: 0.35s, opacity 0.35s;
   border-radius: 100px;
   opacity: 0;
 }
-
-/*style header end*/
 
 /*style enjoy start*/
 .enjoy {
@@ -183,18 +200,16 @@ li {
   position: absolute;
   right: 50%;
   transform: translate(50%, 0);
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.25s;
 }
 
 .enjoy__button-icon {
   position: absolute;
   left: 60%;
   transform: translate(0, 10%);
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.25s;
   opacity: 0;
 }
-
-/*style enjoy end*/
 
 /*style favourites coffee start*/
 .favourites__coffee-wrapper {
@@ -313,8 +328,6 @@ li {
   background: #c1b6ad;
 }
 
-/*style favourites coffee start*/
-
 /*style about start*/
 .about {
   display: flex;
@@ -390,8 +403,6 @@ li {
   transition: 0.5s ease;
   transform: scale(1.1);
 }
-
-/*style about end*/
 
 /*style mobile app start*/
 .mobile__app-wrapper {
@@ -479,14 +490,12 @@ li {
 }
 
 .available__download-appstore {
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
 
 .available__download-googleplay {
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
-
-/*style mobile app end*/
 
 /*style footer start*/
 .footer {
@@ -616,7 +625,7 @@ li {
 /* social button animation */
 .social__icon {
   stroke: #e1d4c9;
-  transition: ease-in 0.35s;
+  transition: ease-in 0.25s;
 }
 
 /* contact button animation */
@@ -627,36 +636,53 @@ li {
   background: #e1d4c9;
   height: 2px;
   width: 0%;
-  transition: 0.8s, opacity 0.8s;
+  transition: 0.35s, opacity 0.25s;
   border-radius: 100px;
   opacity: 0;
 }
 
-/*style footer end*/
-
 /*бургер меню */
 .burger__btn {
+  position: relative;
   display: none;
-  flex-direction: column;
-  justify-content: center;
   cursor: pointer;
   width: 44px;
   height: 44px;
   border: 2px solid #665f55;
   border-radius: 44px;
+
 }
 
-.burger__btn-line {
+.burger__btn span {
+  position: absolute;
   display: block;
   width: 16px;
   height: 2px;
   background: #403f3d;
   border-radius: 1px;
-  margin: 3px auto;
   transition: ease-in 0.25s;
+  left: 32%;
+  top: 50%;
 }
 
-/*бургер меню */
+.burger__btn span:nth-child(1) {
+  background-color: #403F3D;
+  transform: translateY(4px);
+}
+
+.burger__btn span:nth-child(2) {
+  background-color: #403F3D;
+  transform: translateY(-4px);
+}
+
+/*анимация бургер меню*/
+.burger--transform span:nth-child(1) {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.burger--transform span:nth-child(2) {
+  transform: translateY(0px) rotate(-45deg);
+}
 
 /*media qwery 768px*/
 @media only screen and (max-width: 1400px) {
@@ -703,14 +729,67 @@ li {
   }
 }
 
-@media (max-width: 770px) {
-  .burger__btn {
-    display: flex;
+@media (max-width: 768px) {
+
+  /*навигационное меню tablet*/
+
+  .nav__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1d4c9;
+    z-index: 2;
+    font-size: 32px;
+    transform: translateX(100%);
+    transition: 0.35s ease-in-out;
   }
 
-  .menu__burger-none {
+  .nav__menu.burger--open {
+    transform: translateX(0);
+  }
+
+  .scroll--stop {
+    overflow: hidden;
+  }
+
+  .nav__menu_list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 160px 40px;
+  }
+
+  .btn__menu-none {
+    margin-top: 35px;
+    display: block;
+  }
+
+  .btn__menu_icon {
+    margin-left: 15px;
+  }
+
+  .button__menu {
     display: none;
   }
+
+  .btn__menu-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn__menu_icon {
+    margin-left: 15px;
+  }
+
+  .burger__btn {
+    display: block;
+    z-index: 3;
+  }
+
+  /*навигационное меню tablet*/
 
   .column__img-small {
     display: none;
@@ -741,20 +820,10 @@ li {
     aspect-ratio: 660/565;
   }
 
-  .nav__menu {
-    display: none;
-  }
-
-  .button__menu {
-    display: none;
-  }
-
   .column__img-big img {
     transform: scale(1.05);
   }
 }
-
-/*media qwery 768px*/
 
 /*media qwery 380px*/
 @media (max-width: 767px) {
@@ -844,6 +913,11 @@ li {
   .footer__wrapper {
     padding-bottom: 50px
   }
+
+  /*padding навигационное меню*/
+  .nav__menu_list {
+    padding: 160px 16px;
+  }
 }
 
 /*media qwery 380px*/
@@ -855,7 +929,6 @@ li {
     width: 100%;
     opacity: 1;
   }
-  /* подчеркивание навбар*/
 
   /* кнопка меню секции enjoy*/
   .enjoy__button:hover .enjoy__button-menu {
@@ -865,7 +938,6 @@ li {
   .enjoy__button:hover .enjoy__button-icon {
     opacity: 1;
   }
-  /* кнопка меню секции enjoy*/
 
   /* кнопки слайдера*/
   .slider__btn:hover {
@@ -877,7 +949,6 @@ li {
     transform: scale(1.15);
     stroke: #e1d4c9;
   }
-  /* кнопки слайдера*/
 
   /*картинки секции about*/
   .column__img-big img:hover {
@@ -887,7 +958,6 @@ li {
   .column__img-small img:hover {
     transform: scale(1);
   }
-  /*картинки секции about*/
 
   /*кнопки загрузки секции download*/
   .available__download-appstore:hover .color__change-btn {
@@ -909,7 +979,6 @@ li {
     cursor: pointer;
     color: #e1d4c9;
   }
-  /*кнопки загрузки секции download*/
 
   /*кнопки социальных сетей*/
   .social__btn:hover {
@@ -921,12 +990,10 @@ li {
   .social__btn:hover .social__icon {
     stroke: #403f3d;
   }
-  /*кнопки социальных сетей*/
 
   /*подчеркивание в контактах*/
   .underline__contact:hover::after {
     width: 100%;
     opacity: 1;
   }
-  /*подчеркивание в контактах*/
 }

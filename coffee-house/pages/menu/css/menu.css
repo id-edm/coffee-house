@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
   font-family: "Inter";
   background: #e1d4c9;
 }
@@ -36,13 +35,18 @@ li {
   list-style: none;
 }
 
-.container {
+.wrapper__body {
+  overflow: hidden;
   width: 100%;
+  position: relative;
+}
+
+.container {
+  display: block;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   background: #e1d4c9;
-  overflow: hidden;
-  position: relative;
 }
 
 /*style header start*/
